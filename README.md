@@ -34,7 +34,7 @@ climate_analysis_fukuoka/
 
 ### 1. リポジトリをクローンまたはダウンロード
 ```bash
-git clone https://github.com/<sa-104>/climate_analysis_fukuoka.git
+git clone https://github.com/sa-104/climate_analysis_fukuoka.git
 
 pip install pandas matplotlib openpyxl
 3. CSVデータを配置
@@ -79,3 +79,9 @@ pathlibを用いた柔軟なパス管理
 月ごとの平均推移グラフ化
 
 Webアプリ化（Streamlitなどで可視化）
+
+制作者
+GitHub: sa-104
+Comment:
+Pythonを用いたデータ分析と自動レポート生成の練習として作成しました。
+データ処理～可視化～Excel出力まで一連の流れを実装しています。
