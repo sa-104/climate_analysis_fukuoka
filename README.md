@@ -32,53 +32,43 @@ climate_analysis_fukuoka/
 
 ##  実行方法
 
-### 1. リポジトリをクローンまたはダウンロード
+1. リポジトリをクローンまたはダウンロード
 ```bash
 git clone https://github.com/sa-104/climate_analysis_fukuoka.git
 
+2．必要なライブラリをインストール
 pip install pandas matplotlib openpyxl
+
 3. CSVデータを配置
+
 csv フォルダ内に以下の2ファイルを置いてください：
-
-data_weather.csv
-
-data_rain.csv
-
+・data_weather.csv
+・data_rain.csv
 （※気象庁サイトなどから取得）
 
 4. 実行
-bash
-コードをコピーする
 python main.py
 
- 出力結果
-result_data.png
-→ 年ごとの平均気温と年間降水量の二軸グラフ
 
-result.xlsx
-→ 上記グラフを貼り付けたExcelファイル
+出力結果
+
+.result_data.png　→ 年ごとの平均気温と年間降水量の二軸グラフ
+.result.xlsx　→ 上記グラフを貼り付けたExcelファイル
 
 分析結果（例）
-コードをコピーする
 平均気温は過去10年で +0.8℃ の変化
 年間降水量は過去10年で +120mm の変化
 
 学習・実装ポイント
-pandasでのデータ前処理（欠損処理・結合・集計）
 
-matplotlibでの二軸グラフ作成
-
-openpyxlでのExcelファイル出力と画像貼り付け
-
-pathlibを用いた柔軟なパス管理
+・pandasでのデータ前処理（欠損処理・結合・集計）
+・matplotlibでの二軸グラフ作成
+・openpyxlでのExcelファイル出力と画像貼り付け
+・pathlibを用いた柔軟なパス管理
 
 今後の発展案
-
-他都市（東京・大阪など）との比較
-
-月ごとの平均推移グラフ化
-
-Webアプリ化（Streamlitなどで可視化）
+・他都市（東京・大阪など）との比較
+・月ごとの平均推移グラフ化　等
 
 制作者
 GitHub: sa-104
